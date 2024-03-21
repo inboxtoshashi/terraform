@@ -12,7 +12,7 @@ resource "aws_instance" "public_ec2" {
       type = "ssh"
       user = "ubuntu"
       //Here I created a new key pair with the ED25519 algo for provisioner_key
-      private_key = file("C:\Users\shasingh\Documents\TF\workspace_Day8\module\ec2\provisioner_key.pem")
+      private_key = file("provisioner_key.pem")
       host        = self.public_ip
       timeout     = "1m"
       agent       = false
