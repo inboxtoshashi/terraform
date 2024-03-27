@@ -7,7 +7,7 @@ variable "public_subnet_cidr" {
 }
 
 variable "region" {
-  default = "ap-south-1a"
+  default = "us-east-1"
 }
 
 variable "vpc_id" {}
