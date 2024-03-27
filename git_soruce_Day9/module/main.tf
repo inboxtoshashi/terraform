@@ -34,7 +34,7 @@ module "security_group_resource" {
   vpc_id = module.vpc_resource.vpc_id_result
 }
 
-
+/**
 module "ec2_resource" {
   source                 = "./ec2"
   ami                    = data.aws_ssm_parameter.parameter.value
@@ -42,7 +42,7 @@ module "ec2_resource" {
   public_subnet_id       = module.subnet_resource.public_subnet_id_result
   vpc_security_group_ids = module.security_group_resource.sg_id_result
 }
-
+**/
 
 ##############################IMPORT-EC2####################################
 /**
