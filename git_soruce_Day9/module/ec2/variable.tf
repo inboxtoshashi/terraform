@@ -1,5 +1,5 @@
 variable "ssh_key" {
-  default = "provisioner_key"
+  default = "NV_global"
 }
 
 variable "type" {
